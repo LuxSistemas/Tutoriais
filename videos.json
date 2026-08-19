@@ -1,0 +1,122 @@
+[
+  {
+    "id": 51,
+    "titulo": "Ajuste de estoque dos produtos",
+    "url": "https://youtu.be/qJDpTsnpgfw",
+    "tags": "estoque, produtos, ajuste",
+    "descricao": null,
+    "categoria_nome": "Cadastros"
+  },
+  {
+    "id": 52,
+    "titulo": "Ajuste de estoque em lote dos produtos",
+    "url": "https://youtu.be/17oi9FC3fxE",
+    "tags": "estoque, produtos, ajuste, lote",
+    "descricao": null,
+    "categoria_nome": "Cadastros"
+  },
+  {
+    "id": 46,
+    "titulo": "Ajuste de imposto e ajuste de combustível no produto",
+    "url": "https://youtu.be/MEIAxur6aW8",
+    "tags": "estoque, produtos, combustível, imposto, ICMS, ajuste",
+    "descricao": null,
+    "categoria_nome": "Cadastros"
+  },
+  {
+    "id": 42,
+    "titulo": "Cadastro de contador",
+    "url": "https://youtu.be/l8wdy1lAz04",
+    "tags": "contador, cadastro, pessoas, contabilidade",
+    "descricao": null,
+    "categoria_nome": "Cadastros"
+  },
+  {
+    "id": 40,
+    "titulo": "Cadastro de contato",
+    "url": "https://youtu.be/Ry-JZvlZ-LQ",
+    "tags": "contatos, cadastro, cliente, fornecedor, pessoas",
+    "descricao": null,
+    "categoria_nome": "Cadastros"
+  },
+  {
+    "id": 41,
+    "titulo": "Cadastro de pessoa - aba Adicionais",
+    "url": "https://youtu.be/urIdQMpFXEA",
+    "tags": "contatos, cadastro, pessoa, adicionais, cliente, fornecedor",
+    "descricao": null,
+    "categoria_nome": "Cadastros"
+  },
+  {
+    "id": 45,
+    "titulo": "Cadastro de produto",
+    "url": "https://youtu.be/cbpfFcyaCRQ",
+    "tags": "estoque, produtos, cadastro",
+    "descricao": null,
+    "categoria_nome": "Cadastros"
+  },
+  {
+    "id": 43,
+    "titulo": "Cadastro de vendedor",
+    "url": "https://youtu.be/NCotmyXJoV4",
+    "tags": "vendedor, cadastro, pessoas, equipe",
+    "descricao": null,
+    "categoria_nome": "Cadastros"
+  },
+  {
+    "id": 47,
+    "titulo": "Como criar um grupo",
+    "url": "https://youtu.be/i5poqdqzx8s",
+    "tags": "estoque, grupo, cadastro, produtos",
+    "descricao": null,
+    "categoria_nome": "Cadastros"
+  },
+  {
+    "id": 49,
+    "titulo": "Como criar uma marca",
+    "url": "https://youtu.be/7-Vb84ILYwU",
+    "tags": "estoque, marca, cadastro, produtos",
+    "descricao": null,
+    "categoria_nome": "Cadastros"
+  },
+  {
+    "id": 48,
+    "titulo": "Como criar uma unidade",
+    "url": "https://youtu.be/bMW5g9dRUrM",
+    "tags": "estoque, unidade, cadastro, produtos",
+    "descricao": null,
+    "categoria_nome": "Cadastros"
+  },
+  {
+    "id": 39,
+    "titulo": "Contatos - Visão geral",
+    "url": "https://youtu.be/x6FqyzXFXgw",
+    "tags": "contatos, visão geral, cadastro, pessoas",
+    "descricao": null,
+    "categoria_nome": "Cadastros"
+  },
+  {
+    "id": 50,
+    "titulo": "Etiqueta dos produtos",
+    "url": "https://youtu.be/bz9_GbvDjqM",
+    "tags": "estoque, produtos, etiqueta, impressão",
+    "descricao": null,
+    "categoria_nome": "Cadastros"
+  },
+  {
+    "id": 53,
+    "titulo": "Inventário de mês dos produtos",
+    "url": "https://youtu.be/fTML4znfWDM",
+    "tags": "estoque, produtos, inventário, mensal",
+    "descricao": null,
+    "categoria_nome": "Cadastros"
+  },
+  {
+    "id": 44,
+    "titulo": "Produtos - Visão geral",
+    "url": "https://youtu.be/80Yv5APfiC8",
+    "tags": "estoque, produtos, cadastro, visão geral",
+    "descricao": null,
+    "categoria_nome": "Cadastros"
+  }
+]

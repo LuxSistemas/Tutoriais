@@ -1,0 +1,439 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LuxAUTO — Tutoriais</title>
+<style>
+    :root {
+        --erp-verde: #8DC63F;
+        --erp-verde-escuro: #6BA82E;
+        --erp-sidebar: #1C2024;
+        --erp-sidebar-hover: #262B30;
+        --erp-sidebar-sub: #16191C;
+        --erp-texto-claro: #E7EAE4;
+        --erp-texto-fraco: #9AA39B;
+        --erp-ambar: #D9A548;
+        --papel: #F3F4F1;
+        --card: #FFFFFF;
+        --ink: #1B2A33;
+        --ink-soft: #5C6B73;
+        --ink-faint: #8A969C;
+        --rule: #DADED6;
+        --rule-strong: #C3C9C0;
+        --mono: "SFMono-Regular", ui-monospace, "Cascadia Code", Menlo, Consolas, monospace;
+        --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    html, body { margin: 0; height: 100%; }
+
+    body {
+        font-family: var(--sans);
+        background: var(--papel);
+        color: var(--ink);
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    .topbar {
+        background: var(--erp-verde);
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 18px;
+        height: 52px;
+        flex: 0 0 auto;
+    }
+
+    .topbar .marca {
+        display: flex;
+        align-items: center;
+    }
+
+    .topbar .marca img {
+        height: 30px;
+        width: auto;
+        display: block;
+    }
+
+    .topbar .acoes {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .topbar .ac {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 650;
+        opacity: .95;
+        white-space: nowrap;
+    }
+
+    .topbar .ac .ic { font-size: 20px; }
+    .topbar .ac.redondo {
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, .18);
+        justify-content: center;
+        font-size: 17px;
+    }
+
+    .topbar .ac img { height: 22px; width: auto; display: block; }
+    .topbar .ac.redondo img { height: 20px; }
+    .topbar .ac.clicavel { cursor: pointer; padding: 5px 10px; border-radius: 7px; }
+    .topbar .ac.clicavel:hover { background: rgba(255, 255, 255, .18); }
+    .topbar .ac .ic-img { height: 20px; width: auto; display: block; }
+
+    .topbar.pdv { justify-content: space-between; }
+
+    .marca-pdv {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #fff;
+        font-size: 19px;
+        font-weight: 700;
+        letter-spacing: .01em;
+    }
+
+    .marca-pdv img { height: 30px; width: auto; display: block; }
+
+    .acoes-pdv {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        color: #fff;
+    }
+
+    .acoes-pdv .lux-txt { font-size: 13px; font-weight: 650; opacity: .95; }
+
+    .acoes-pdv .ajuda { display: flex; align-items: center; gap: 6px; font-size: 13px; opacity: .95; }
+
+    .acoes-pdv .janela-ic {
+        width: 22px;
+        height: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        opacity: .85;
+    }
+
+    body.modo-pdv .sidebar { background: #4A4A4A; }
+    body.modo-pdv .item-menu:hover, body.modo-pdv .subitem:hover { background: #575757; }
+    body.modo-pdv .submenu { background: #424242; }
+    body.modo-pdv .item-menu.ativo { background: var(--erp-verde); }
+
+    .tabstrip {
+        flex: 0 0 auto;
+        background: var(--papel);
+        border-bottom: 1px solid var(--rule-strong);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 14px;
+        height: 34px;
+    }
+
+    .tabstrip .tabs { display: flex; align-items: stretch; height: 100%; }
+
+    .tabstrip .tab {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 0 12px;
+        font-size: 12.5px;
+        color: var(--ink-soft);
+        border-right: 1px solid var(--rule);
+        background: var(--rule);
+    }
+
+    .tabstrip .tab.ativa {
+        background: var(--card);
+        color: var(--ink);
+        font-weight: 650;
+        border-bottom: 2px solid var(--erp-verde);
+    }
+
+    .tabstrip .tab .x {
+        width: 14px;
+        height: 14px;
+        border-radius: 3px;
+        background: #C0392B;
+        color: #fff;
+        font-size: 9px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 1;
+    }
+
+    .buscabar {
+        flex: 0 0 auto;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 8px;
+        padding: 10px 14px;
+        background: var(--card);
+        border-bottom: 1px solid var(--rule);
+    }
+
+    .buscabar input {
+        flex: 1;
+        max-width: 480px;
+        border: 1px solid var(--rule-strong);
+        border-radius: 8px;
+        padding: 8px 12px;
+        font-size: 13.5px;
+        background: var(--papel);
+        color: var(--ink);
+    }
+
+    .buscabar input:focus { border-color: var(--erp-verde); outline: none; }
+
+    .buscabar button {
+        border: 0;
+        background: none;
+        color: var(--ink-faint);
+        font-size: 13px;
+        cursor: pointer;
+        padding: 4px 6px;
+    }
+
+    .buscabar button:hover { color: var(--ink); }
+
+    .busca-submenu {
+        width: 100%;
+        max-width: 360px;
+        border: 1px solid var(--rule-strong);
+        border-radius: 8px;
+        padding: 7px 11px;
+        font-size: 13px;
+        background: var(--card);
+        color: var(--ink);
+        margin-bottom: 18px;
+    }
+
+    .busca-submenu:focus { border-color: var(--erp-verde); outline: none; }
+
+    .resultado-info {
+        font-size: 12px;
+        color: var(--ink-faint);
+        font-family: var(--mono);
+        margin: 0 0 14px;
+    }
+
+    .corpo {
+        display: flex;
+        flex: 1;
+        min-height: 0;
+    }
+
+    .sidebar {
+        background: var(--erp-sidebar);
+        width: 220px;
+        flex: 0 0 auto;
+        overflow-y: auto;
+        padding: 8px 0;
+    }
+
+    .item-menu {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+        padding: 11px 18px;
+        color: var(--erp-texto-claro);
+        font-size: 13.5px;
+        cursor: pointer;
+        border-left: 3px solid transparent;
+        user-select: none;
+    }
+
+    .item-menu:hover { background: var(--erp-sidebar-hover); }
+
+    .item-menu.ativo {
+        background: var(--erp-verde);
+        color: #fff;
+        border-left-color: var(--erp-verde-escuro);
+    }
+
+    .item-menu .ic { font-size: 15px; width: 18px; text-align: center; flex: 0 0 auto; }
+    .item-menu .lbl { flex: 1; }
+    .item-menu .seta { font-size: 10px; opacity: .7; transition: transform .15s; }
+    .item-menu.aberto .seta { transform: rotate(90deg); }
+
+    .submenu { background: var(--erp-sidebar-sub); display: none; }
+    .submenu.aberto { display: block; }
+
+    .subitem {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        padding: 9px 18px 9px 38px;
+        color: var(--erp-ambar);
+        font-size: 12.5px;
+        cursor: pointer;
+        border-left: 3px solid transparent;
+    }
+
+    .subitem::before { content: "❯"; font-size: 9px; opacity: .85; }
+
+    .subitem:hover { background: var(--erp-sidebar-hover); color: #fff; }
+
+    .subitem.ativo {
+        color: #fff;
+        background: var(--erp-sidebar-hover);
+        border-left-color: var(--erp-verde);
+        font-weight: 650;
+    }
+
+    .conteudo {
+        flex: 1;
+        overflow-y: auto;
+        padding: 26px 32px 40px;
+    }
+
+    .trilha {
+        font-family: var(--mono);
+        font-size: 11px;
+        color: var(--ink-faint);
+        text-transform: uppercase;
+        letter-spacing: .08em;
+        margin-bottom: 6px;
+    }
+
+    .conteudo h1 {
+        font-size: 21px;
+        margin: 0 0 18px;
+        color: var(--ink);
+    }
+
+    .secao-videos + .secao-videos { margin-top: 28px; }
+
+    .secao-titulo {
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: .08em;
+        color: var(--erp-verde-escuro);
+        margin: 0 0 10px;
+        padding-bottom: 6px;
+        border-bottom: 1px solid var(--rule);
+    }
+
+    .grid-videos {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 14px;
+    }
+
+    .vcard {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid var(--rule);
+        border-radius: 12px;
+        background: var(--card);
+        overflow: hidden;
+    }
+
+    .vcard .vthumb {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        background: var(--rule);
+    }
+
+    .vcard .vbody { padding: 12px 14px 14px; }
+
+    .vcard h2 {
+        font-size: 14.5px;
+        margin: 0 0 6px;
+        font-weight: 650;
+        color: var(--ink);
+    }
+
+    .vcard .vdesc {
+        font-size: 12.5px;
+        color: var(--ink-soft);
+        margin: 0 0 10px;
+    }
+
+    .vcard a {
+        display: inline-block;
+        font-family: var(--mono);
+        font-size: 11.5px;
+        border: 1px solid var(--erp-verde);
+        background: var(--erp-verde);
+        color: #fff;
+        border-radius: 7px;
+        padding: 6px 12px;
+        text-decoration: none;
+    }
+
+    .vcard a:hover { background: var(--erp-verde-escuro); border-color: var(--erp-verde-escuro); }
+
+    .placeholder {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: var(--ink-faint);
+        padding: 70px 20px;
+        border: 1px dashed var(--rule-strong);
+        border-radius: 14px;
+    }
+
+    .placeholder .ic { font-size: 34px; margin-bottom: 10px; }
+    .placeholder p { max-width: 34ch; font-size: 13.5px; margin: 4px 0 0; }
+
+    @media (max-width: 700px) {
+        .topbar .acoes, .acoes-pdv { gap: 10px; }
+        .topbar .ac .txt { display: none; }
+        .topbar .ac { gap: 0; }
+        .acoes-pdv .lux-txt, .acoes-pdv .ajuda .txt { display: none; }
+        .sidebar { width: 168px; }
+        .item-menu, .subitem { font-size: 12px; padding-left: 12px; padding-right: 10px; }
+        .subitem { padding-left: 26px; }
+        .conteudo { padding: 18px 14px 30px; }
+    }
+
+    .rodape-proto {
+        flex: 0 0 auto;
+        background: var(--card);
+        border-top: 1px solid var(--rule);
+        color: var(--ink-faint);
+        font-family: var(--mono);
+        font-size: 10.5px;
+        padding: 5px 16px;
+        display: flex;
+        justify-content: flex-end;
+        gap: 22px;
+    }
+</style>
+
+<div id="topbar"></div>
+<div id="tabstrip"></div>
+
+<div class="buscabar">
+    <input type="text" id="buscaGeral" placeholder="Buscar em todos os tutoriais...">
+    <button type="button" id="limparBuscaGeral" hidden>✕</button>
+</div>
+
+<div class="corpo">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="conteudo" id="conteudo"></main>
+</div>
+
+<div class="rodape-proto">
+    <span>central de tutoriais</span>
+    <span>LuxAUTO</span>
+</div>
+
+<script type="module" src="app.js"></script>
