@@ -104,6 +104,22 @@
     "categoria_nome": "Cadastros"
   },
   {
+    "id": 58,
+    "titulo": "Importação de nota de compra automática",
+    "url": "https://youtu.be/7RH8gG9Tq2s",
+    "tags": "compras, nota de fornecedor, importação, automática, XML, SEFAZ",
+    "descricao": null,
+    "categoria_nome": "Financeiro"
+  },
+  {
+    "id": 59,
+    "titulo": "Importação de nota de compra pela chave de acesso",
+    "url": "https://youtu.be/Z9xe-u0tsEk",
+    "tags": "compras, nota de fornecedor, importação, chave de acesso, manual",
+    "descricao": null,
+    "categoria_nome": "Financeiro"
+  },
+  {
     "id": 56,
     "titulo": "Importação de nota via arquivo XML local",
     "url": "https://youtu.be/ZqzXXuoSSto",
@@ -132,6 +148,14 @@
     "titulo": "Lista de compras - Visão geral",
     "url": "https://youtu.be/1tcXALIgPOM",
     "tags": "compras, lista de compras, visão geral",
+    "descricao": null,
+    "categoria_nome": "Financeiro"
+  },
+  {
+    "id": 57,
+    "titulo": "Nota de fornecedor - Visão geral",
+    "url": "https://youtu.be/z4U3xgkwRCw",
+    "tags": "compras, nota de fornecedor, visão geral",
     "descricao": null,
     "categoria_nome": "Financeiro"
   },

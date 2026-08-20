@@ -44,6 +44,11 @@ const VIDEOS_RETAGUARDA = {
     'estoque>ajuste-estoque-lote': { essenciais: [52] },
     'estoque>inventario-mensal': { essenciais: [53] },
     'compras>lista-compras': { geral: [54], essenciais: [55, 56] },
+    'compras>consulta-notas-fornecedor': {
+        geral: [57],
+        essenciais: [58, 59],
+        nota: 'A importação automática consulta o servidor da SEFAZ, então pode falhar quando ele estiver instável. Se isso acontecer, use a importação pela chave de acesso como alternativa.',
+    },
 };
 
 const VIDEOS_PDV = {};
@@ -395,8 +400,9 @@ async function renderConteudo() {
         </div>`;
     }).join('');
 
+    const notaHtml = categorias.nota ? `<div class="aviso-nota">⚠️ ${escapeHtml(categorias.nota)}</div>` : '';
     const filtroHtml = secoesHtml ? `<input type="text" class="busca-submenu" id="buscaSubmenu" placeholder="Filtrar vídeos dessa tela...">` : '';
-    $('areaVideos').outerHTML = `<div id="areaVideos">${filtroHtml}${secoesHtml || placeholderHtml('Os tutoriais desse módulo ainda estão sendo organizados — em breve chegam aqui.')}</div>`;
+    $('areaVideos').outerHTML = `<div id="areaVideos">${notaHtml}${filtroHtml}${secoesHtml || placeholderHtml('Os tutoriais desse módulo ainda estão sendo organizados — em breve chegam aqui.')}</div>`;
 
     const buscaSub = $('buscaSubmenu');
     if (buscaSub) {
