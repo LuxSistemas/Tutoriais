@@ -47,7 +47,7 @@ const VIDEOS_RETAGUARDA = {
     'compras>consulta-notas-fornecedor': {
         geral: [57],
         essenciais: [58, 59],
-        nota: 'A importação automática consulta o servidor da SEFAZ, então pode falhar quando ele estiver instável. Se isso acontecer, use a importação pela chave de acesso como alternativa.',
+        nota: 'Se a importação automática não funcionar, não é erro do sistema — às vezes é o site da Receita que está fora do ar. Nesse caso, use a importação pela chave de acesso.',
     },
 };
 
