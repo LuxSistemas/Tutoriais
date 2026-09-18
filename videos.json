@@ -1,5 +1,13 @@
 [
   {
+    "id": 83,
+    "titulo": "Adiantamento",
+    "url": "https://youtu.be/TYGT8byfwI4",
+    "tags": "financeiro, adiantamento, caixa e banco",
+    "descricao": null,
+    "categoria_nome": "Financeiro"
+  },
+  {
     "id": 51,
     "titulo": "Ajuste de estoque dos produtos",
     "url": "https://youtu.be/qJDpTsnpgfw",
@@ -70,6 +78,14 @@
     "tags": "vendedor, cadastro, pessoas, equipe",
     "descricao": null,
     "categoria_nome": "Cadastros"
+  },
+  {
+    "id": 81,
+    "titulo": "Caixa e banco",
+    "url": "https://youtu.be/AfVn8Zxg47A",
+    "tags": "financeiro, caixa e banco, caixas e bancos, visão geral",
+    "descricao": null,
+    "categoria_nome": "Financeiro"
   },
   {
     "id": 70,
@@ -176,6 +192,14 @@
     "categoria_nome": "Orçamentos"
   },
   {
+    "id": 82,
+    "titulo": "Criação manual de conta no caixa e banco",
+    "url": "https://youtu.be/Fap3HK8TM7o",
+    "tags": "financeiro, caixa e banco, criar conta, cadastro",
+    "descricao": null,
+    "categoria_nome": "Financeiro"
+  },
+  {
     "id": 61,
     "titulo": "Devolução de compra - Como fazer",
     "url": "https://youtu.be/CXbT4h26LaI",
@@ -188,6 +212,14 @@
     "titulo": "Devolução de compras - Visão geral",
     "url": "https://youtu.be/IdZUYCrVt9M",
     "tags": "compras, devolução, visão geral",
+    "descricao": null,
+    "categoria_nome": "Financeiro"
+  },
+  {
+    "id": 79,
+    "titulo": "Encontro de contas",
+    "url": "https://youtu.be/SV693ocSLPg",
+    "tags": "financeiro, encontro de contas, visão geral",
     "descricao": null,
     "categoria_nome": "Financeiro"
   },
@@ -214,6 +246,14 @@
     "tags": "vendas, devolução, cadastro",
     "descricao": null,
     "categoria_nome": "Orçamentos"
+  },
+  {
+    "id": 80,
+    "titulo": "Ficha de clientes",
+    "url": "https://youtu.be/o1NDzgwAiu8",
+    "tags": "financeiro, ficha de clientes, visão geral",
+    "descricao": null,
+    "categoria_nome": "Financeiro"
   },
   {
     "id": 69,
@@ -316,6 +356,14 @@
     "titulo": "Renegociação e estorno",
     "url": "https://youtu.be/9FRat9k5YxM",
     "tags": "financeiro, contas a pagar, contas a receber, renegociação, estorno",
+    "descricao": null,
+    "categoria_nome": "Financeiro"
+  },
+  {
+    "id": 84,
+    "titulo": "Transferência de conta",
+    "url": "https://youtu.be/CHQl72TLl4M",
+    "tags": "financeiro, transferência de conta, visão geral",
     "descricao": null,
     "categoria_nome": "Financeiro"
   }

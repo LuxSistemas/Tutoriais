@@ -60,6 +60,10 @@ const VIDEOS_RETAGUARDA = {
     'financeiro>contas': { essenciais: [71] },
     'financeiro>contas-pagar': { geral: [72], essenciais: [73, 74, 75] },
     'financeiro>contas-receber': { geral: [76], essenciais: [75, 77, 78] },
+    'financeiro>encontro-contas': { geral: [79] },
+    'financeiro>ficha-clientes': { geral: [80] },
+    'financeiro>caixas-bancos': { geral: [81], essenciais: [82, 83] },
+    'financeiro>transferencia-conta': { geral: [84] },
 };
 
 const VIDEOS_PDV = {};
@@ -119,7 +123,6 @@ const MENU_RETAGUARDA = [
             { id: 'ficha-clientes', label: 'Ficha de Clientes' },
             { id: 'caixas-bancos', label: 'Caixas e Bancos' },
             { id: 'transferencia-conta', label: 'Transferência de Conta' },
-            { id: 'impressao-recibo', label: 'Impressão de Recibo' },
         ],
     },
     {
