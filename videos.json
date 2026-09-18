@@ -88,6 +88,14 @@
     "categoria_nome": "Financeiro"
   },
   {
+    "id": 92,
+    "titulo": "Carta de correção e duplicar NF-e",
+    "url": "https://youtu.be/FUnhdicty64",
+    "tags": "fiscal, nfe, carta de correção, duplicar",
+    "descricao": null,
+    "categoria_nome": "Fiscal"
+  },
+  {
     "id": 70,
     "titulo": "Centro de custo",
     "url": "https://youtu.be/QWEcUhIIZr0",
@@ -192,6 +200,14 @@
     "categoria_nome": "Orçamentos"
   },
   {
+    "id": 89,
+    "titulo": "Criação manual de NF-e",
+    "url": "https://youtu.be/X1wRRrhJ9JQ",
+    "tags": "fiscal, nfe, criação manual",
+    "descricao": null,
+    "categoria_nome": "Fiscal"
+  },
+  {
     "id": 82,
     "titulo": "Criação manual de conta no caixa e banco",
     "url": "https://youtu.be/Fap3HK8TM7o",
@@ -246,6 +262,22 @@
     "tags": "vendas, devolução, cadastro",
     "descricao": null,
     "categoria_nome": "Orçamentos"
+  },
+  {
+    "id": 90,
+    "titulo": "Fechamento de mês na NF-e",
+    "url": "https://youtu.be/CmAQYty0alA",
+    "tags": "fiscal, nfe, fechamento de mês",
+    "descricao": null,
+    "categoria_nome": "Fiscal"
+  },
+  {
+    "id": 87,
+    "titulo": "Fechamento de mês na NFC-e",
+    "url": "https://youtu.be/sCa0HmintS0",
+    "tags": "fiscal, nfce, fechamento de mês",
+    "descricao": null,
+    "categoria_nome": "Fiscal"
   },
   {
     "id": 80,
@@ -320,6 +352,30 @@
     "categoria_nome": "Orçamentos"
   },
   {
+    "id": 88,
+    "titulo": "NF-e - visão geral",
+    "url": "https://youtu.be/yUrcZvNlJjk",
+    "tags": "fiscal, nfe, nota fiscal eletrônica, visão geral",
+    "descricao": null,
+    "categoria_nome": "Fiscal"
+  },
+  {
+    "id": 86,
+    "titulo": "NFC-e - visão geral",
+    "url": "https://youtu.be/OhIVnnc82s8",
+    "tags": "fiscal, nfce, nota fiscal consumidor, visão geral",
+    "descricao": null,
+    "categoria_nome": "Fiscal"
+  },
+  {
+    "id": 85,
+    "titulo": "NFS-e - visão geral e transmissão",
+    "url": "https://youtu.be/F5KY5pumepU",
+    "tags": "fiscal, nfse, nota fiscal de serviço, transmissão, visão geral",
+    "descricao": null,
+    "categoria_nome": "Fiscal"
+  },
+  {
     "id": 57,
     "titulo": "Nota de fornecedor - Visão geral",
     "url": "https://youtu.be/z4U3xgkwRCw",
@@ -366,5 +422,13 @@
     "tags": "financeiro, transferência de conta, visão geral",
     "descricao": null,
     "categoria_nome": "Financeiro"
+  },
+  {
+    "id": 91,
+    "titulo": "Transportadora na NF-e",
+    "url": "https://youtu.be/fUXEomT0834",
+    "tags": "fiscal, nfe, transportadora",
+    "descricao": null,
+    "categoria_nome": "Fiscal"
   }
 ]
