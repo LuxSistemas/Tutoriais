@@ -67,6 +67,7 @@ const VIDEOS_RETAGUARDA = {
     'fiscal>nfse': { geral: [85] },
     'fiscal>nfce': { geral: [86], essenciais: [87] },
     'fiscal>nfe': { geral: [88], essenciais: [89, 90, 91, 92] },
+    'fiscal>cfop': { essenciais: [93] },
 };
 
 const VIDEOS_PDV = {};
