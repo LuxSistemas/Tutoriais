@@ -71,7 +71,7 @@ const VIDEOS_RETAGUARDA = {
     'servicos>ordem-servico': { geral: [94], essenciais: [95, 96, 98, 99] },
     'servicos>checklist': { geral: [97] },
     'frotas>cadastro-veiculos': { geral: [100] },
-    'relatorios>rel-os': { geral: [101] },
+    'relatorios': { geral: [101] },
     'inicio': { geral: [104], essenciais: [102] },
     'acesso': { geral: [103] },
 };
@@ -148,9 +148,7 @@ const MENU_RETAGUARDA = [
         id: 'servicos', label: 'Serviços', icone: '🔧',
         submenu: [
             { id: 'ordem-servico', label: 'Ordem de Serviço' },
-            { id: 'revisao-garantia', label: 'Revisão e Garantia' },
             { id: 'checklist', label: 'Checklist' },
-            { id: 'diagnostico-ia', label: 'Diagnóstico IA' },
         ],
     },
     {
@@ -159,16 +157,7 @@ const MENU_RETAGUARDA = [
             { id: 'cadastro-veiculos', label: 'Cadastro de Veículos' },
         ],
     },
-    {
-        id: 'relatorios', label: 'Relatórios', icone: '📊',
-        submenu: [
-            { id: 'rel-os', label: 'Ordens de Serviço' },
-            { id: 'rel-produtos', label: 'Produtos' },
-            { id: 'rel-vendas', label: 'Vendas' },
-            { id: 'rel-financeiro', label: 'Financeiro' },
-            { id: 'rel-resultados', label: 'Resultados' },
-        ],
-    },
+    { id: 'relatorios', label: 'Relatórios', icone: '📊' },
     { id: 'configuracoes', label: 'Configurações', icone: '⚙️' },
 ];
 
