@@ -256,6 +256,14 @@
     "categoria_nome": "Ordens de Serviço"
   },
   {
+    "id": 103,
+    "titulo": "Criação de usuário e edição de permissões",
+    "url": "https://youtu.be/W22BZkS_w2E",
+    "tags": "acesso, usuario, permissoes, cadastro",
+    "descricao": null,
+    "categoria_nome": null
+  },
+  {
     "id": 89,
     "titulo": "Criação manual de NF-e",
     "url": "https://youtu.be/X1wRRrhJ9JQ",
@@ -270,6 +278,14 @@
     "tags": "financeiro, caixa e banco, criar conta, cadastro",
     "descricao": null,
     "categoria_nome": "Financeiro"
+  },
+  {
+    "id": 104,
+    "titulo": "Dashboard - visão geral",
+    "url": "https://youtu.be/7Kr5gwBQq-s",
+    "tags": "dashboard, inicio, visão geral",
+    "descricao": null,
+    "categoria_nome": null
   },
   {
     "id": 61,

@@ -72,7 +72,8 @@ const VIDEOS_RETAGUARDA = {
     'servicos>checklist': { geral: [97] },
     'frotas>cadastro-veiculos': { geral: [100] },
     'relatorios>rel-os': { geral: [101] },
-    'inicio': { essenciais: [102] },
+    'inicio': { geral: [104], essenciais: [102] },
+    'acesso': { geral: [103] },
 };
 
 const VIDEOS_PDV = {};
