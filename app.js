@@ -64,10 +64,15 @@ const VIDEOS_RETAGUARDA = {
     'financeiro>ficha-clientes': { geral: [80] },
     'financeiro>caixas-bancos': { geral: [81], essenciais: [82, 83] },
     'financeiro>transferencia-conta': { geral: [84] },
-    'fiscal>nfse': { geral: [85] },
+    'fiscal>nfse': { geral: [85], essenciais: [99] },
     'fiscal>nfce': { geral: [86], essenciais: [87] },
-    'fiscal>nfe': { geral: [88], essenciais: [89, 90, 91, 92] },
+    'fiscal>nfe': { geral: [88], essenciais: [89, 90, 91, 92, 98] },
     'fiscal>cfop': { essenciais: [93] },
+    'servicos>ordem-servico': { geral: [94], essenciais: [95, 96, 98, 99] },
+    'servicos>checklist': { geral: [97] },
+    'frotas>cadastro-veiculos': { geral: [100] },
+    'relatorios>rel-os': { geral: [101] },
+    'inicio': { essenciais: [102] },
 };
 
 const VIDEOS_PDV = {};

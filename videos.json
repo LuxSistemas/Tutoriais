@@ -88,6 +88,14 @@
     "categoria_nome": "Cadastros"
   },
   {
+    "id": 100,
+    "titulo": "Cadastro de veículos",
+    "url": "https://youtu.be/NOJl9P1YwFc",
+    "tags": "frotas, veiculos, cadastro",
+    "descricao": null,
+    "categoria_nome": null
+  },
+  {
     "id": 81,
     "titulo": "Caixa e banco",
     "url": "https://youtu.be/AfVn8Zxg47A",
@@ -112,6 +120,30 @@
     "categoria_nome": "Financeiro"
   },
   {
+    "id": 97,
+    "titulo": "Checklist - visão geral",
+    "url": "https://youtu.be/oA2D7pEG8dc",
+    "tags": "servicos, checklist, visão geral",
+    "descricao": null,
+    "categoria_nome": "Ordens de Serviço"
+  },
+  {
+    "id": 102,
+    "titulo": "Como criar e visualizar a agenda",
+    "url": "https://youtu.be/njz_5XWZBtI",
+    "tags": "agenda, inicio, criar, visualizar",
+    "descricao": null,
+    "categoria_nome": null
+  },
+  {
+    "id": 95,
+    "titulo": "Como criar um O.S do zero",
+    "url": "https://youtu.be/gUm-G8yj1P8",
+    "tags": "servicos, ordem de servico, os, criar, cadastro",
+    "descricao": null,
+    "categoria_nome": "Ordens de Serviço"
+  },
+  {
     "id": 47,
     "titulo": "Como criar um grupo",
     "url": "https://youtu.be/i5poqdqzx8s",
@@ -134,6 +166,14 @@
     "tags": "estoque, unidade, cadastro, produtos",
     "descricao": null,
     "categoria_nome": "Cadastros"
+  },
+  {
+    "id": 99,
+    "titulo": "Como importar O.S dentro da NFS-e",
+    "url": "https://youtu.be/vVBEfw8yjKg",
+    "tags": "servicos, ordem de servico, os, nfs-e, nfse, importar",
+    "descricao": null,
+    "categoria_nome": "Ordens de Serviço"
   },
   {
     "id": 71,
@@ -206,6 +246,14 @@
     "tags": "vendas, orçamento, criar, cadastro",
     "descricao": null,
     "categoria_nome": "Orçamentos"
+  },
+  {
+    "id": 96,
+    "titulo": "Criar e mudar etapas da O.S",
+    "url": "https://youtu.be/j1t6jiMWZKo",
+    "tags": "servicos, ordem de servico, os, etapas, status",
+    "descricao": null,
+    "categoria_nome": "Ordens de Serviço"
   },
   {
     "id": 89,
@@ -304,6 +352,14 @@
     "categoria_nome": "Financeiro"
   },
   {
+    "id": 98,
+    "titulo": "Importar O.S dentro da NF-e",
+    "url": "https://youtu.be/KT-o9n2k12Y",
+    "tags": "servicos, ordem de servico, os, nf-e, nfe, importar",
+    "descricao": null,
+    "categoria_nome": "Ordens de Serviço"
+  },
+  {
     "id": 58,
     "titulo": "Importação de nota de compra automática",
     "url": "https://youtu.be/7RH8gG9Tq2s",
@@ -392,6 +448,14 @@
     "categoria_nome": "Financeiro"
   },
   {
+    "id": 94,
+    "titulo": "O.S - visão geral",
+    "url": "https://youtu.be/MuviVUBgTJY",
+    "tags": "servicos, ordem de servico, os, visão geral",
+    "descricao": null,
+    "categoria_nome": "Ordens de Serviço"
+  },
+  {
     "id": 62,
     "titulo": "Orçamento - Visão geral",
     "url": "https://youtu.be/iZOacQy9XlY",
@@ -414,6 +478,14 @@
     "tags": "estoque, produtos, cadastro, visão geral",
     "descricao": null,
     "categoria_nome": "Cadastros"
+  },
+  {
+    "id": 101,
+    "titulo": "Relatórios - visão geral",
+    "url": "https://youtu.be/FCg9Dpp3X3U",
+    "tags": "relatorios, visão geral",
+    "descricao": null,
+    "categoria_nome": null
   },
   {
     "id": 75,
