@@ -81,7 +81,7 @@ const VIDEOS_RETAGUARDA = {
 
 const VIDEOS_PDV = {
     'caixa': { geral: [109] },
-    'caixa>emissao-nfce': { essenciais: [110] },
+    'emitir-nfce': { essenciais: [110, 111] },
 };
 
 const MENU_RETAGUARDA = [
@@ -168,34 +168,8 @@ const MENU_RETAGUARDA = [
 ];
 
 const MENU_PDV = [
-    {
-        id: 'caixa', label: 'Caixa', icone: '💵',
-        submenu: [
-            { id: 'emissao-nfce', label: 'Emissão do NFC-e' },
-        ],
-    },
-    {
-        id: 'produtos', label: 'Produtos', icone: '📦',
-        submenu: [
-            { id: 'deleta-item', label: 'Deleta Item' },
-            { id: 'deleta-leitor', label: 'Deleta P/ Leitor' },
-            { id: 'desconto-item', label: 'Desconto Item' },
-            { id: 'busca-preco', label: 'Busca Preço' },
-        ],
-    },
-    {
-        id: 'clientes', label: 'Clientes', icone: '👥',
-        submenu: [
-            { id: 'cad-clientes', label: 'Cad. Clientes' },
-            { id: 'receber-conta', label: 'Receber Conta' },
-        ],
-    },
-    { id: 'vendedor', label: 'Vendedor - F3', icone: '🧑' },
-    { id: 'busca-avancada', label: 'Busca Avançada - F4', icone: '🔍' },
-    { id: 'importar', label: 'Importar - F5', icone: '⬇️' },
-    { id: 'cancelar-venda', label: 'Cancelar Venda - F6', icone: '🛒' },
-    { id: 'concluir-venda', label: 'Concluir Venda - F7', icone: '🧾' },
-    { id: 'adicionar-item', label: 'Adicionar Item - F12', icone: '➕' },
+    { id: 'caixa', label: 'Caixa', icone: '💵' },
+    { id: 'emitir-nfce', label: 'Emitir NFC-e', icone: '🧾' },
 ];
 
 const SISTEMAS = {
@@ -204,7 +178,7 @@ const SISTEMAS = {
 };
 
 let sistemaAtivo = 'retaguarda';
-const noPorSistema = { retaguarda: 'pessoas>contatos', pdv: 'caixa>resumo-caixa' };
+const noPorSistema = { retaguarda: 'pessoas>contatos', pdv: 'caixa' };
 let todosVideos = null;
 let fuseIndex = null;
 
