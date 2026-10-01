@@ -74,9 +74,15 @@ const VIDEOS_RETAGUARDA = {
     'relatorios': { geral: [101] },
     'inicio': { geral: [104], essenciais: [102] },
     'acesso': { geral: [103] },
+    'faturas': { geral: [105] },
+    'whatsapp': { geral: [106], essenciais: [107] },
+    'app': { geral: [108] },
 };
 
-const VIDEOS_PDV = {};
+const VIDEOS_PDV = {
+    'caixa': { geral: [109] },
+    'caixa>emissao-nfce': { essenciais: [110] },
+};
 
 const MENU_RETAGUARDA = [
     { id: 'inicio', label: 'Início', icone: '🏠' },
@@ -165,13 +171,7 @@ const MENU_PDV = [
     {
         id: 'caixa', label: 'Caixa', icone: '💵',
         submenu: [
-            { id: 'fechar-caixa', label: 'Fechar Caixa' },
-            { id: 'resumo-caixa', label: 'Resumo Caixa' },
-            { id: 'sangria', label: 'Sangria' },
-            { id: 'suprimento', label: 'Suprimento' },
-            { id: 'abrir-gaveta', label: 'Abrir Gaveta' },
-            { id: 'reimprimir-nfce', label: 'Reimprimir NFCe' },
-            { id: 'admin-tef', label: 'Administ. TEF' },
+            { id: 'emissao-nfce', label: 'Emissão do NFC-e' },
         ],
     },
     {
@@ -257,7 +257,7 @@ function renderTopo() {
                     <span class="ac clicavel" id="btnApp"><span class="ic">📱</span><span class="txt">APP</span></span>
                     <span class="ac clicavel" id="btnOrdemServico"><span class="ic">📋</span><span class="txt">Ordem de Serviço</span></span>
                     <span class="ac clicavel" id="btnFaturas"><span class="ic">🧾</span><span class="txt">Faturas</span></span>
-                    <span class="ac redondo"><img src="assets/logos/whatsapp.png" alt="WhatsApp"></span>
+                    <span class="ac redondo clicavel" id="btnWhatsapp"><img src="assets/logos/whatsapp.png" alt="WhatsApp"></span>
                     <span class="ac redondo">?</span>
                     <span class="ac"><span class="ic">👤</span><span class="txt">ADMIN</span></span>
                 </div>
@@ -274,6 +274,7 @@ function renderTopo() {
         $('btnOrdemServico').addEventListener('click', () => navegarPara('servicos>ordem-servico'));
         $('btnFaturas').addEventListener('click', () => navegarPara('faturas'));
         $('btnApp').addEventListener('click', () => navegarPara('app'));
+        $('btnWhatsapp').addEventListener('click', () => navegarPara('whatsapp'));
     } else {
         $('topbar').innerHTML = `
             <div class="topbar pdv">
@@ -317,7 +318,7 @@ function renderSidebar() {
     }).join('');
 }
 
-const EXTRAS_LABEL = { faturas: 'Faturas', app: 'App' };
+const EXTRAS_LABEL = { faturas: 'Faturas', app: 'App', whatsapp: 'WhatsApp' };
 
 function labelDoNo(no) {
     const [moduloId, subId] = no.split('>');

@@ -1,11 +1,27 @@
 [
   {
+    "id": 109,
+    "titulo": "Abrindo o caixa e funções do PDV",
+    "url": "https://youtu.be/VBONA1kO3ng",
+    "tags": "pdv, caixa, visão geral",
+    "descricao": null,
+    "categoria_nome": "Venda/PDV"
+  },
+  {
     "id": 83,
     "titulo": "Adiantamento",
     "url": "https://youtu.be/TYGT8byfwI4",
     "tags": "financeiro, adiantamento, caixa e banco",
     "descricao": null,
     "categoria_nome": "Financeiro"
+  },
+  {
+    "id": 107,
+    "titulo": "Agendamento automático de mensagens no WhatsApp",
+    "url": "https://youtu.be/DrVLxs7AL-c",
+    "tags": "whatsapp, agendamento automático, mensagens",
+    "descricao": null,
+    "categoria_nome": null
   },
   {
     "id": 51,
@@ -128,6 +144,22 @@
     "categoria_nome": "Ordens de Serviço"
   },
   {
+    "id": 108,
+    "titulo": "Como conectar no Lux O.S (App)",
+    "url": "https://youtu.be/rALAnWtaAvY",
+    "tags": "app, lux os, conectar, visão geral",
+    "descricao": null,
+    "categoria_nome": null
+  },
+  {
+    "id": 106,
+    "titulo": "Como conectar o WhatsApp",
+    "url": "https://youtu.be/0iCmEypXgIQ",
+    "tags": "whatsapp, conectar, integração, visão geral",
+    "descricao": null,
+    "categoria_nome": null
+  },
+  {
     "id": 102,
     "titulo": "Como criar e visualizar a agenda",
     "url": "https://youtu.be/njz_5XWZBtI",
@@ -166,6 +198,14 @@
     "tags": "estoque, unidade, cadastro, produtos",
     "descricao": null,
     "categoria_nome": "Cadastros"
+  },
+  {
+    "id": 110,
+    "titulo": "Como emitir uma NFC-e pelo PDV",
+    "url": "https://youtu.be/dCzcYnQYfAM",
+    "tags": "pdv, caixa, nfce, emitir, nfc-e",
+    "descricao": null,
+    "categoria_nome": "Venda/PDV"
   },
   {
     "id": 99,
@@ -318,6 +358,14 @@
     "tags": "estoque, produtos, etiqueta, impressão",
     "descricao": null,
     "categoria_nome": "Cadastros"
+  },
+  {
+    "id": 105,
+    "titulo": "Faturas - visão geral",
+    "url": "https://youtu.be/-wuvBfR_UeI",
+    "tags": "faturas, visão geral",
+    "descricao": null,
+    "categoria_nome": null
   },
   {
     "id": 65,
