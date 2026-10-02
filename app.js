@@ -77,6 +77,7 @@ const VIDEOS_RETAGUARDA = {
     'faturas': { geral: [105] },
     'whatsapp': { geral: [106], essenciais: [107] },
     'app': { geral: [108] },
+    'boas-vindas': { geral: [112] },
 };
 
 const VIDEOS_PDV = {
@@ -178,7 +179,7 @@ const SISTEMAS = {
 };
 
 let sistemaAtivo = 'retaguarda';
-const noPorSistema = { retaguarda: 'pessoas>contatos', pdv: 'caixa' };
+const noPorSistema = { retaguarda: 'boas-vindas', pdv: 'caixa' };
 let todosVideos = null;
 let fuseIndex = null;
 
@@ -292,7 +293,7 @@ function renderSidebar() {
     }).join('');
 }
 
-const EXTRAS_LABEL = { faturas: 'Faturas', app: 'App', whatsapp: 'WhatsApp' };
+const EXTRAS_LABEL = { faturas: 'Faturas', app: 'App', whatsapp: 'WhatsApp', 'boas-vindas': 'Bem-vindo' };
 
 function labelDoNo(no) {
     const [moduloId, subId] = no.split('>');

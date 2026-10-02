@@ -320,6 +320,14 @@
     "categoria_nome": "Financeiro"
   },
   {
+    "id": 112,
+    "titulo": "Curso - introdução e como usar o sistema",
+    "url": "https://youtu.be/vsN7yHrsMWI",
+    "tags": "introducao, curso, como usar, bem-vindo, primeiro vídeo",
+    "descricao": null,
+    "categoria_nome": null
+  },
+  {
     "id": 104,
     "titulo": "Dashboard - visão geral",
     "url": "https://youtu.be/7Kr5gwBQq-s",
