@@ -96,114 +96,114 @@ const TRILHA_OFICINA = [
     {
         bloco: 'Configuração inicial (faz uma vez, na implantação)',
         itens: [
-            { titulo: 'Configurações › Empresa — parâmetros gerais', video: null },
-            { titulo: 'Pessoas › Contatos — Visão Geral', video: 39 },
-            { titulo: 'Pessoas › Cadastro de Pessoas — Dados Básicos', video: 40 },
-            { titulo: 'Pessoas › Cadastro de Pessoas — Aba Adicionais', video: 41 },
-            { titulo: 'Pessoas › Vendedores', video: 43 },
-            { titulo: 'Pessoas › Contador', video: 42 },
-            { titulo: 'Financeiro › Contas', video: 71 },
-            { titulo: 'Financeiro › Formas de Pagamento', video: 69 },
-            { titulo: 'Financeiro › Planos de Conta', video: 68 },
-            { titulo: 'Financeiro › Centro de Custo', video: 70 },
-            { titulo: 'Estoque › Grupo', video: 47 },
-            { titulo: 'Estoque › Unidades', video: 48 },
-            { titulo: 'Estoque › Marcas', video: 49 },
-            { titulo: 'Estoque › Produtos — Visão Geral', video: 44 },
-            { titulo: 'Estoque › Cadastro de Produto — Aba Geral', video: 45 },
-            { titulo: 'Estoque › Cadastro de Produto — Impostos e Combustível', video: 46 },
-            { titulo: 'Estoque › Impressão de Etiqueta', video: 50 },
-            { titulo: 'Frotas › Cadastro de Veículos', video: 100 },
-            { titulo: 'Serviços › Configuração de Etapas da OS', video: 96 },
-            { titulo: 'Acesso › Usuários', video: 103 },
-            { titulo: 'Acesso › Permissões', video: 103 },
+            { titulo: 'Configurações › Empresa — parâmetros gerais', video: null, no: 'configuracoes' },
+            { titulo: 'Pessoas › Contatos — Visão Geral', video: 39, no: 'pessoas>contatos' },
+            { titulo: 'Pessoas › Cadastro de Pessoas — Dados Básicos', video: 40, no: 'pessoas>contatos' },
+            { titulo: 'Pessoas › Cadastro de Pessoas — Aba Adicionais', video: 41, no: 'pessoas>contatos' },
+            { titulo: 'Pessoas › Vendedores', video: 43, no: 'pessoas>vendedores' },
+            { titulo: 'Pessoas › Contador', video: 42, no: 'pessoas>contador' },
+            { titulo: 'Financeiro › Contas', video: 71, no: 'financeiro>contas' },
+            { titulo: 'Financeiro › Formas de Pagamento', video: 69, no: 'financeiro>formas-pagamento' },
+            { titulo: 'Financeiro › Planos de Conta', video: 68, no: 'financeiro>planos-conta' },
+            { titulo: 'Financeiro › Centro de Custo', video: 70, no: 'financeiro>centro-custo' },
+            { titulo: 'Estoque › Grupo', video: 47, no: 'estoque>grupo' },
+            { titulo: 'Estoque › Unidades', video: 48, no: 'estoque>unidades' },
+            { titulo: 'Estoque › Marcas', video: 49, no: 'estoque>marcas' },
+            { titulo: 'Estoque › Produtos — Visão Geral', video: 44, no: 'estoque>produtos' },
+            { titulo: 'Estoque › Cadastro de Produto — Aba Geral', video: 45, no: 'estoque>produtos' },
+            { titulo: 'Estoque › Cadastro de Produto — Impostos e Combustível', video: 46, no: 'estoque>produtos' },
+            { titulo: 'Estoque › Impressão de Etiqueta', video: 50, no: 'estoque>imp-etiqueta' },
+            { titulo: 'Frotas › Cadastro de Veículos', video: 100, no: 'frotas>cadastro-veiculos' },
+            { titulo: 'Serviços › Configuração de Etapas da OS', video: 96, no: 'servicos>ordem-servico' },
+            { titulo: 'Acesso › Usuários', video: 103, no: 'acesso' },
+            { titulo: 'Acesso › Permissões', video: 103, no: 'acesso' },
         ],
     },
     {
         bloco: 'O ciclo do serviço (o coração da oficina)',
         itens: [
-            { titulo: 'Vendas › Orçamento — Visão Geral', video: 62 },
-            { titulo: 'Vendas › Criar Orçamento', video: 63 },
-            { titulo: 'Vendas › Contratos', video: 67 },
-            { titulo: 'Serviços › Ordem de Serviço — Visão Geral', video: 94 },
-            { titulo: 'Serviços › Criar OS — veículo, cliente, serviços e peças', video: 95 },
-            { titulo: 'Serviços › OS — abas complementares (Problemas, Observações, Fotos)', video: 95 },
-            { titulo: 'Serviços › Finalizar e Faturar OS', video: 96 },
-            { titulo: 'Serviços › Mudar Status', video: 96 },
-            { titulo: 'Início › Agenda', video: 102 },
+            { titulo: 'Vendas › Orçamento — Visão Geral', video: 62, no: 'vendas>orcamento' },
+            { titulo: 'Vendas › Criar Orçamento', video: 63, no: 'vendas>orcamento' },
+            { titulo: 'Vendas › Contratos', video: 67, no: 'vendas>contratos' },
+            { titulo: 'Serviços › Ordem de Serviço — Visão Geral', video: 94, no: 'servicos>ordem-servico' },
+            { titulo: 'Serviços › Criar OS — veículo, cliente, serviços e peças', video: 95, no: 'servicos>ordem-servico' },
+            { titulo: 'Serviços › OS — abas complementares (Problemas, Observações, Fotos)', video: 95, no: 'servicos>ordem-servico' },
+            { titulo: 'Serviços › Finalizar e Faturar OS', video: 96, no: 'servicos>ordem-servico' },
+            { titulo: 'Serviços › Mudar Status', video: 96, no: 'servicos>ordem-servico' },
+            { titulo: 'Início › Agenda', video: 102, no: 'inicio' },
         ],
     },
     {
         bloco: 'O dinheiro entrando e saindo',
         itens: [
-            { titulo: 'Compras › Lista de Compras — Visão Geral', video: 54 },
-            { titulo: 'Compras › Importação por XML (Ler XML)', video: 56 },
-            { titulo: 'Compras › Consulta Notas de Fornecedor (DFE) — Visão Geral', video: 57 },
-            { titulo: 'Compras › Importar Nota pelo DFE', video: 58 },
-            { titulo: 'Compras › Nota de Compra Manual', video: 59 },
-            { titulo: 'Financeiro › Contas a Pagar — Visão Geral', video: 72 },
-            { titulo: 'Financeiro › Contas a Pagar — Dar baixa (F7)', video: 73 },
-            { titulo: 'Financeiro › Contas a Pagar — Cadastro manual', video: 74 },
-            { titulo: 'Financeiro › Contas a Receber — Visão Geral', video: 76 },
-            { titulo: 'Financeiro › Contas a Receber — Dar baixa (F8)', video: 78 },
-            { titulo: 'Financeiro › Contas a Receber — Cadastro manual', video: 77 },
-            { titulo: 'Financeiro › Caixas e Bancos — Visão Geral', video: 81 },
-            { titulo: 'Financeiro › Caixas e Bancos — Lançamento manual', video: 82 },
-            { titulo: 'Financeiro › Transferência de Conta', video: 84 },
-            { titulo: 'Financeiro › Adiantamento', video: 83 },
+            { titulo: 'Compras › Lista de Compras — Visão Geral', video: 54, no: 'compras>lista-compras' },
+            { titulo: 'Compras › Importação por XML (Ler XML)', video: 56, no: 'compras>lista-compras' },
+            { titulo: 'Compras › Consulta Notas de Fornecedor (DFE) — Visão Geral', video: 57, no: 'compras>consulta-notas-fornecedor' },
+            { titulo: 'Compras › Importar Nota pelo DFE', video: 58, no: 'compras>consulta-notas-fornecedor' },
+            { titulo: 'Compras › Nota de Compra Manual', video: 59, no: 'compras>consulta-notas-fornecedor' },
+            { titulo: 'Financeiro › Contas a Pagar — Visão Geral', video: 72, no: 'financeiro>contas-pagar' },
+            { titulo: 'Financeiro › Contas a Pagar — Dar baixa (F7)', video: 73, no: 'financeiro>contas-pagar' },
+            { titulo: 'Financeiro › Contas a Pagar — Cadastro manual', video: 74, no: 'financeiro>contas-pagar' },
+            { titulo: 'Financeiro › Contas a Receber — Visão Geral', video: 76, no: 'financeiro>contas-receber' },
+            { titulo: 'Financeiro › Contas a Receber — Dar baixa (F8)', video: 78, no: 'financeiro>contas-receber' },
+            { titulo: 'Financeiro › Contas a Receber — Cadastro manual', video: 77, no: 'financeiro>contas-receber' },
+            { titulo: 'Financeiro › Caixas e Bancos — Visão Geral', video: 81, no: 'financeiro>caixas-bancos' },
+            { titulo: 'Financeiro › Caixas e Bancos — Lançamento manual', video: 82, no: 'financeiro>caixas-bancos' },
+            { titulo: 'Financeiro › Transferência de Conta', video: 84, no: 'financeiro>transferencia-conta' },
+            { titulo: 'Financeiro › Adiantamento', video: 83, no: 'financeiro>caixas-bancos' },
         ],
     },
     {
         bloco: 'Fiscal da oficina',
         itens: [
-            { titulo: 'Fiscal › Cadastro de CFOP', video: 93 },
-            { titulo: 'Fiscal › NFS-e — Visão Geral e Emissão', video: 85 },
-            { titulo: 'Fiscal › NFS-e — Importar Ordem de Serviço', video: 99 },
-            { titulo: 'Fiscal › NF-e — Visão Geral', video: 88 },
-            { titulo: 'Fiscal › NF-e — Emissão', video: 89 },
-            { titulo: 'Fiscal › NF-e — Importar Ordem de Serviço', video: 98 },
-            { titulo: 'Fiscal › NF-e — Transportadora e Volumes', video: 91 },
-            { titulo: 'Fiscal › NF-e — Carta de Correção (CCe) e Duplicar', video: 92 },
-            { titulo: 'Fiscal › NF-e — Fechar Mês', video: 90 },
+            { titulo: 'Fiscal › Cadastro de CFOP', video: 93, no: 'fiscal>cfop' },
+            { titulo: 'Fiscal › NFS-e — Visão Geral e Emissão', video: 85, no: 'fiscal>nfse' },
+            { titulo: 'Fiscal › NFS-e — Importar Ordem de Serviço', video: 99, no: 'fiscal>nfse' },
+            { titulo: 'Fiscal › NF-e — Visão Geral', video: 88, no: 'fiscal>nfe' },
+            { titulo: 'Fiscal › NF-e — Emissão', video: 89, no: 'fiscal>nfe' },
+            { titulo: 'Fiscal › NF-e — Importar Ordem de Serviço', video: 98, no: 'fiscal>nfe' },
+            { titulo: 'Fiscal › NF-e — Transportadora e Volumes', video: 91, no: 'fiscal>nfe' },
+            { titulo: 'Fiscal › NF-e — Carta de Correção (CCe) e Duplicar', video: 92, no: 'fiscal>nfe' },
+            { titulo: 'Fiscal › NF-e — Fechar Mês', video: 90, no: 'fiscal>nfe' },
         ],
     },
     {
         bloco: 'Venda de balcão (PDV)',
         itens: [
-            { titulo: 'Vendas › PDV — Caixa (abrir, sangria, suprimento, fechar)', video: 109 },
-            { titulo: 'Vendas › PDV — Venda e emissão de NFC-e', video: 110 },
-            { titulo: 'Vendas › PDV — Importar Pedido / Orçamento / O.S.', video: 111 },
-            { titulo: 'Fiscal › NFC-e — Visão Geral', video: 86 },
-            { titulo: 'Fiscal › NFC-e — Fechar Mês', video: 87 },
-            { titulo: 'Vendas › Lista de Vendas', video: 64 },
+            { titulo: 'Vendas › PDV — Caixa (abrir, sangria, suprimento, fechar)', video: 109, no: 'caixa' },
+            { titulo: 'Vendas › PDV — Venda e emissão de NFC-e', video: 110, no: 'emitir-nfce' },
+            { titulo: 'Vendas › PDV — Importar Pedido / Orçamento / O.S.', video: 111, no: 'emitir-nfce' },
+            { titulo: 'Fiscal › NFC-e — Visão Geral', video: 86, no: 'fiscal>nfce' },
+            { titulo: 'Fiscal › NFC-e — Fechar Mês', video: 87, no: 'fiscal>nfce' },
+            { titulo: 'Vendas › Lista de Vendas', video: 64, no: 'vendas>lista-vendas' },
         ],
     },
     {
         bloco: 'Rotinas periódicas e gestão',
         itens: [
-            { titulo: 'Estoque › Ajuste de Estoque', video: 51 },
-            { titulo: 'Estoque › Ajuste de Estoque em Lote', video: 52 },
-            { titulo: 'Estoque › Inventário Mensal', video: 53 },
-            { titulo: 'Compras › Devolução de Compra — Visão Geral', video: 60 },
-            { titulo: 'Compras › Criar Devolução de Compra', video: 61 },
-            { titulo: 'Vendas › Devolução de Venda', video: 66 },
-            { titulo: 'Financeiro › Contas a Pagar — Renegociar', video: 75 },
-            { titulo: 'Financeiro › Contas a Pagar — Estornar parcela', video: 75 },
-            { titulo: 'Financeiro › Encontro de Contas', video: 79 },
-            { titulo: 'Financeiro › Ficha de Clientes', video: 80 },
-            { titulo: 'Frotas › Histórico do Veículo', video: 100 },
-            { titulo: 'Início › Dashboards', video: 104 },
-            { titulo: 'Relatórios', video: 101 },
+            { titulo: 'Estoque › Ajuste de Estoque', video: 51, no: 'estoque>ajuste-estoque' },
+            { titulo: 'Estoque › Ajuste de Estoque em Lote', video: 52, no: 'estoque>ajuste-estoque-lote' },
+            { titulo: 'Estoque › Inventário Mensal', video: 53, no: 'estoque>inventario-mensal' },
+            { titulo: 'Compras › Devolução de Compra — Visão Geral', video: 60, no: 'compras>devolucao-compra' },
+            { titulo: 'Compras › Criar Devolução de Compra', video: 61, no: 'compras>devolucao-compra' },
+            { titulo: 'Vendas › Devolução de Venda', video: 66, no: 'vendas>devolucao-venda' },
+            { titulo: 'Financeiro › Contas a Pagar — Renegociar', video: 75, no: 'financeiro>contas-pagar' },
+            { titulo: 'Financeiro › Contas a Pagar — Estornar parcela', video: 75, no: 'financeiro>contas-pagar' },
+            { titulo: 'Financeiro › Encontro de Contas', video: 79, no: 'financeiro>encontro-contas' },
+            { titulo: 'Financeiro › Ficha de Clientes', video: 80, no: 'financeiro>ficha-clientes' },
+            { titulo: 'Frotas › Histórico do Veículo', video: 100, no: 'frotas>cadastro-veiculos' },
+            { titulo: 'Início › Dashboards', video: 104, no: 'inicio' },
+            { titulo: 'Relatórios', video: 101, no: 'relatorios' },
         ],
     },
     {
         bloco: 'Diferenciais e administração',
         itens: [
-            { titulo: 'WhatsApp — Conectar o número', video: 106 },
-            { titulo: 'WhatsApp — Mensagens e pré-agendamento automático', video: 107 },
-            { titulo: 'Serviços › Checklist do Reparador', video: 97 },
-            { titulo: 'APP — Lux O.S.', video: 108 },
-            { titulo: 'Barra superior › Faturas', video: 105 },
+            { titulo: 'WhatsApp — Conectar o número', video: 106, no: 'whatsapp' },
+            { titulo: 'WhatsApp › Mensagens e pré-agendamento automático', video: 107, no: 'whatsapp' },
+            { titulo: 'Serviços › Checklist do Reparador', video: 97, no: 'servicos>checklist' },
+            { titulo: 'APP — Lux O.S.', video: 108, no: 'app' },
+            { titulo: 'Barra superior › Faturas', video: 105, no: 'faturas' },
         ],
     },
 ];
@@ -315,6 +315,10 @@ let sistemaAtivo = 'retaguarda';
 const noPorSistema = { retaguarda: 'boas-vindas', pdv: 'caixa' };
 let todosVideos = null;
 let fuseIndex = null;
+// Enquanto está na tela da trilha ("Comece por aqui"), guarda em qual tela REAL do
+// menu o passo assistido no momento fica — assim o menu lateral acende Pessoas >
+// Contatos, por exemplo, mesmo com o conteúdo principal ainda mostrando a trilha.
+let destaqueTrilha = null;
 
 function menuAtual() { return SISTEMAS[sistemaAtivo].menu; }
 function noAtivo() { return noPorSistema[sistemaAtivo]; }
@@ -409,17 +413,21 @@ function renderTopo() {
 function renderSidebar() {
     const menu = menuAtual();
     const no = noAtivo();
+    // No === 'trilha' não bate com nenhum item do menu de verdade (de propósito),
+    // então usamos o destaque guardado (a tela real do passo assistido) só pra decidir
+    // o que fica "ativo"/aberto — a entrada "Comece por aqui" continua refletindo `no`.
+    const destaque = (no === 'trilha' && destaqueTrilha) ? destaqueTrilha : no;
     const entradaTrilha = `
         <div class="item-menu ${no === 'trilha' ? 'ativo' : ''}" data-no="trilha"><span class="ic">📚</span><span class="lbl">Comece por aqui</span></div>
         <div class="sidebar-divisor"></div>`;
     $('sidebar').innerHTML = entradaTrilha + menu.map((mod) => {
         if (!mod.submenu) {
-            return `<div class="item-menu ${no === mod.id ? 'ativo' : ''}" data-no="${mod.id}"><span class="ic">${mod.icone}</span><span class="lbl">${escapeHtml(mod.label)}</span></div>`;
+            return `<div class="item-menu ${destaque === mod.id ? 'ativo' : ''}" data-no="${mod.id}"><span class="ic">${mod.icone}</span><span class="lbl">${escapeHtml(mod.label)}</span></div>`;
         }
-        const submenuAberto = no.startsWith(mod.id + '>');
+        const submenuAberto = destaque.startsWith(mod.id + '>');
         const subitens = mod.submenu.map((sub) => {
             const subno = `${mod.id}>${sub.id}`;
-            return `<div class="subitem ${subno === no ? 'ativo' : ''}" data-no="${subno}">${escapeHtml(sub.label)}</div>`;
+            return `<div class="subitem ${subno === destaque ? 'ativo' : ''}" data-no="${subno}">${escapeHtml(sub.label)}</div>`;
         }).join('');
         return `
             <div class="item-menu ${submenuAberto ? 'aberto' : ''}" data-modulo="${mod.id}">
@@ -526,6 +534,7 @@ function tocarPassoTrilha(passos, porId, index) {
         const marcador = el.querySelector('.trilha-marcador');
         if (marcador) marcador.textContent = '✓';
     });
+    if (passo.no) { destaqueTrilha = passo.no; renderSidebar(); }
     // Pula pro próximo passo que seja de fato um vídeo diferente — senão "próximo
     // vídeo" reabriria o mesmo vídeo de novo quando dois passos seguidos o compartilham.
     let proximoIndex = index + 1;
