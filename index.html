@@ -456,6 +456,62 @@
         border: 0;
     }
 
+    .player-rodape {
+        padding: 10px 14px;
+        background: var(--card);
+        text-align: right;
+    }
+
+    .player-rodape:empty { display: none; }
+
+    .sidebar-divisor {
+        height: 1px;
+        background: var(--erp-sidebar-hover);
+        margin: 8px 16px;
+    }
+
+    .trilha-bloco + .trilha-bloco { margin-top: 26px; }
+
+    .trilha-bloco-titulo {
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: .06em;
+        color: var(--ink-faint);
+        margin: 0 0 10px;
+    }
+
+    .trilha-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 12px;
+        border: 1px solid var(--rule);
+        border-radius: 8px;
+        margin-bottom: 6px;
+        cursor: pointer;
+    }
+
+    .trilha-item:hover { border-color: var(--erp-verde); }
+
+    .trilha-item.feito { opacity: .6; }
+    .trilha-item.feito .trilha-titulo { text-decoration: line-through; }
+
+    .trilha-item.em-breve { cursor: default; opacity: .45; }
+    .trilha-item.em-breve:hover { border-color: var(--rule); }
+
+    .trilha-marcador { font-size: 14px; width: 18px; text-align: center; flex-shrink: 0; }
+    .trilha-titulo { flex: 1; font-size: 13px; color: var(--ink); }
+
+    .trilha-badge {
+        font-family: var(--mono);
+        font-size: 10px;
+        text-transform: uppercase;
+        color: var(--ink-faint);
+        border: 1px solid var(--rule-strong);
+        border-radius: 20px;
+        padding: 1px 7px;
+    }
+
     .player-sem-embed {
         display: flex;
         align-items: center;
@@ -534,6 +590,7 @@
             <button type="button" class="player-fechar" id="fecharPlayer">✕</button>
         </div>
         <div class="player-corpo" id="playerCorpo"></div>
+        <div class="player-rodape" id="playerRodape"></div>
     </div>
 </div>
 
