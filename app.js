@@ -70,6 +70,13 @@ const VIDEOS_RETAGUARDA = {
     'fiscal>cfop': { essenciais: [93] },
     'servicos>ordem-servico': { geral: [94], essenciais: [95, 96, 98, 99] },
     'servicos>checklist': { geral: [97] },
+    'crm>meu-dia': { geral: [113] },
+    'crm>central-envios': { geral: [113] },
+    'crm>cliente-360': { geral: [113] },
+    'crm>revisao-garantia': { geral: [113] },
+    'crm>cobranca': { geral: [113] },
+    'crm>automacoes': { geral: [113] },
+    'crm>resultados': { geral: [113] },
     'frotas>cadastro-veiculos': { geral: [100] },
     'relatorios': { geral: [101] },
     'inicio': { geral: [104], essenciais: [102] },
@@ -289,6 +296,18 @@ const MENU_RETAGUARDA = [
         submenu: [
             { id: 'ordem-servico', label: 'Ordem de Serviço' },
             { id: 'checklist', label: 'Checklist' },
+        ],
+    },
+    {
+        id: 'crm', label: 'CRM', icone: '🤝',
+        submenu: [
+            { id: 'meu-dia', label: 'Meu dia' },
+            { id: 'central-envios', label: 'Central de envios' },
+            { id: 'cliente-360', label: 'Cliente 360' },
+            { id: 'revisao-garantia', label: 'Revisão e garantia' },
+            { id: 'cobranca', label: 'Cobrança' },
+            { id: 'automacoes', label: 'Automações' },
+            { id: 'resultados', label: 'Resultados' },
         ],
     },
     {
