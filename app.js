@@ -64,7 +64,7 @@ const VIDEOS_RETAGUARDA = {
     'financeiro>ficha-clientes': { geral: [80] },
     'financeiro>caixas-bancos': { geral: [81], essenciais: [82, 83] },
     'financeiro>transferencia-conta': { geral: [84] },
-    'fiscal>nfse': { geral: [85], essenciais: [99] },
+    'fiscal>nfse': { geral: [85], essenciais: [99], avancado: [114] },
     'fiscal>nfce': { geral: [86], essenciais: [87] },
     'fiscal>nfe': { geral: [88], essenciais: [89, 90, 91, 92, 98] },
     'fiscal>cfop': { essenciais: [93] },
